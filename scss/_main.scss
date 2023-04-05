@@ -1,0 +1,167 @@
+.main{
+    .main_section .imagenes:hover{
+        width: 10%;
+        height: 10%;
+        opacity: 1;
+        filter:contrast(120%);
+    }
+    .main_section.seccionSegunda:hover {
+        background-color:$color-secundario;
+    }
+    .main_section.seccionTercera:hover {
+        background-color:$color-secundario;
+    }
+    .main_section.seccionComic:hover {
+        background-color:$color-secundario;
+    }
+    .main_textoCentrado {
+        text-align: $text-align
+    }
+    .main_textoCentrado1 {
+        text-align: $text-align;
+    }
+    .main_section {
+        width: 100%;
+        margin:0 auto;
+        height: 100%;
+        object-fit: $object-fit;
+        display: $display;
+        justify-content: $justify-content;
+        align-items: $align-items;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .main_section_imagenes {
+            width: 0px;
+            height: 100%;
+            flex-grow: 1;
+            object-fit: $object-fit;
+        }  
+    }
+    .main_sectionPrincipalIndex {
+        background-color:rgba(4, 4, 4, 0.9);
+        text-shadow: 5px 1px 1px $color-quinto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        .main_sectionPrincipalIndex_primertitulo {
+            font-size: 25px;
+            color:$color-cuarto;
+        }
+        .main_sectionPrincipalIndex_tituloPrincipal {
+            font-style: bold;
+            font-size: 55px;
+            color:rgb(138, 9, 9)
+        }    
+        .main_sectionPrincipalIndex_primerparrafo {
+            font-size: 30px;
+            color:$color-cuarto;
+        }
+    }
+    .main_seccionComic {
+        color:$color-primario;
+        font-size: 20px;
+        display: f$display;
+        flex-direction: $flex-direction;
+        flex-wrap: $flex-wrap;
+        justify-content: $justify-content2;
+        background-color: $color-terciario;
+        text-shadow: -5px -1px 1px $color-quinto;
+        margin-bottom: 30px;
+        align-items: $align-items;
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: $text-align;
+        .main_seccionComic_primerTituloComic{
+            font-size: 30px;
+            color:rgb(252, 251, 251);
+            background-color: rgba(201, 151, 151, 0.441);
+            justify-content: $justify-content;
+        }
+        .main_seccionComic_primerTituloComic,
+        .seccionComic p {
+        margin: 35px;
+        }
+    }
+    .main_seccionSegunda {
+        color:$color-primario;
+        font-size: 20px;
+        display: $display;
+        flex-wrap: $flex-wrap;
+        justify-content:$justify-content;
+        background-color: $color-terciario;
+        text-shadow: -5px -1px 1px $color-quinto;
+        margin-bottom: 30px;
+        align-items: $align-items;
+        .main_seccionSegunda_seccionSegundaMemes {
+            justify-content: $justify-content;
+            text-align: $text-align;
+            .main_seccionSegunda_seccionSegundaMemes_meme {
+                display: $display;
+                flex-direction: $flex-direction;
+                align-items: $align-items;
+                margin-bottom: 30px;
+            }
+        }    
+    }
+    .main_seccionTercera{
+        color:$color-primario;
+        font-size: 20px;
+        background-color:$color-terciario;
+        text-shadow: -5px -1px 1px $color-quinto;
+        display: $display;
+        flex-wrap: $flex-wrap;
+        justify-content:$justify-content;       
+        .main_seccionTercera_contenedorCardsMap {
+        width: 100%;
+        display: $display;
+        justify-content: $justify-content2;
+        gap: 1rem;
+            .main_seccionTercera_contenedorCardsMap_cardMap {
+            display: $display;
+            flex-direction: $flex-direction;
+            width: calc(50% - 0.5rem);
+            height: auto;
+            justify-content: $justify-content2;
+            align-items: $align-items;
+            }
+            .main_seccionTercera_contenedorCardsMap_card img{
+            width: 70%;
+            height: 70%;
+            object-fit: $object-fit;
+            background-color: #fff;
+            margin-right: 200px;
+            align-items: $align-items;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            text-align: $text-align;
+            justify-content: $justify-content2;
+            flex-direction: $flex-direction;
+            }
+        }   
+    }
+    .main_formularioIndex {
+        background-color: $color-terciario;
+        font-size: 20px;
+        text-align: $text-align;
+        color:$color-primario;
+        bottom: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        section.formularioIndex:hover {
+            background-color:$color-secundario;
+        }
+    }
+    @media screen and (max-width: 768px){
+        section{
+            flex-wrap: $flex-wrap;
+        }
+        section .imagenes{
+            height: 80%;
+        }
+        section .imagenes:hover{
+            width: 70%;
+            
+        }
+    }
+}

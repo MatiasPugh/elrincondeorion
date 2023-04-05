@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+.contenedorCardsMemes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+a:hover {
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgb(11, 10, 10);
+  color: aliceblue;
+}
+
+a:visited {
+  color: rgb(101, 103, 104);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  h1, h2, h3 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+* body {
+  background-color: #0c0c0c;
+}
+* .colorFondoPrincipal {
+  background-color: rgba(0, 0, 0, 0.499);
+  margin-bottom: 10px;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+* .imagenFondo {
+  background-image: url(../assets/img/imagen\ fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+* .imagenFondoComics {
+  background-image: url(../assets/img/imagen\ fondo\ 3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+* .imagenFondoVideojuegos {
+  background-image: url(../assets/img/fondo\ juegos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+* .imagenFondoSeries {
+  background-image: url(../assets/img/fondo\ series.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: cover;
+}
+* .imagenFondoNoticias {
+  background-image: url(../assets/img/fondo\ noticias.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgb(46, 44, 44);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+header .navegacionHeader .logoNav {
+  overflow: hidden;
+}
+header .navegacionHeader .logoNav .logoHeader {
+  float: left;
+}
+header .navegacionHeader .listaNavegacion {
+  list-style: none;
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+  float: right;
+  margin-right: 100px;
+  margin-top: 5px;
+}
+header .navegacionHeader .listaNavegacion .linkNav {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 17px;
+  background-color: rgb(39, 38, 38);
+  display: inline-block;
+  width: 110px;
+  position: fixed;
+  justify-content: center;
+}
+
+/*
+.logoNav {
+    overflow: hidden;
+}
+
+.logoHeader {
+    float:left;
+}
+
+
+.listaNavegacion {
+    list-style: none;
+    margin: 0%;
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content:$justify-content2;
+    width: 30%;
+    float: right;
+    margin-right: 100px;
+    margin-top: 5px;
+
+}
+
+
+.linkNav {
+    text-decoration: none;
+    color: $color-primario;
+    font-size: 17px;
+    background-color: rgb(39, 38, 38);
+    display: inline-block;
+    width: 110px;
+    position: fixed;
+    justify-content: $justify-content;
+}
+
+header {
+    background-color:rgb(46, 44, 44);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+*/
+.main section .imagenes:hover {
+  width: 10%;
+  height: 10%;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.main section.seccionSegunda:hover {
+  background-color: rgba(49, 23, 23, 0.9);
+}
+.main section.seccionTercera:hover {
+  background-color: rgba(49, 23, 23, 0.9);
+}
+.main section.seccionComic:hover {
+  background-color: rgba(49, 23, 23, 0.9);
+}
+.main .textoCentrado {
+  text-align: center;
+}
+.main .textoCentrado1 {
+  text-align: center;
+}
+.main .section {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .section .imagenes {
+  width: 0px;
+  height: 100%;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .sectionPrincipalIndex {
+  background-color: rgba(4, 4, 4, 0.9);
+  text-shadow: 5px 1px 1px rgba(180, 172, 172, 0.05);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main .sectionPrincipalIndex .primertitulo {
+  font-size: 25px;
+  color: rgb(118, 7, 7);
+}
+.main .sectionPrincipalIndex .tituloPrincipal {
+  font-style: bold;
+  font-size: 55px;
+  color: rgb(138, 9, 9);
+}
+.main .sectionPrincipalIndex .primerparrafo {
+  font-size: 30px;
+  color: rgb(118, 7, 7);
+}
+.main .seccionComic {
+  color: aliceblue;
+  font-size: 20px;
+  display: f flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(22, 4, 4, 0.518);
+  text-shadow: -5px -1px 1px rgba(180, 172, 172, 0.05);
+  margin-bottom: 30px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.main .seccionComic .primerTituloComic {
+  font-size: 30px;
+  color: rgb(252, 251, 251);
+  background-color: rgba(201, 151, 151, 0.441);
+  justify-content: center;
+}
+.main .seccionComic .primerTituloComic,
+.main .seccionComic .seccionComic p {
+  margin: 35px;
+}
+.main .seccionSegunda {
+  color: aliceblue;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(22, 4, 4, 0.518);
+  text-shadow: -5px -1px 1px rgba(180, 172, 172, 0.05);
+  margin-bottom: 30px;
+  align-items: center;
+}
+.main .seccionSegunda .seccionSegundaMemes {
+  justify-content: center;
+  text-align: center;
+}
+.main .seccionSegunda .seccionSegundaMemes .meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.main .seccionTercera {
+  color: aliceblue;
+  font-size: 20px;
+  background-color: rgba(22, 4, 4, 0.518);
+  text-shadow: -5px -1px 1px rgba(180, 172, 172, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .seccionTercera .contenedorCardsMap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.main .seccionTercera .contenedorCardsMap .cardMap {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 0.5rem);
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .seccionTercera .contenedorCardsMap .card img {
+  width: 70%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #fff;
+  margin-right: 200px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main .formularioIndex {
+  background-color: rgba(22, 4, 4, 0.518);
+  font-size: 20px;
+  text-align: center;
+  color: aliceblue;
+  bottom: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.main .formularioIndex section.formularioIndex:hover {
+  background-color: rgba(49, 23, 23, 0.9);
+}
+@media screen and (max-width: 768px) {
+  .main section {
+    flex-wrap: wrap;
+  }
+  .main section .imagenes {
+    height: 80%;
+  }
+  .main section .imagenes:hover {
+    width: 70%;
+  }
+}
+
+.colorFooter {
+  background-color: rgba(22, 4, 4, 0.518);
+  text-align: right;
+  color: aliceblue;
+  font-size: 15px;
+  border: inset 3px grey;
+  margin-top: 5px;
+  position: sticky;
+  bottom: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+}
+.colorFooter .derechosReservados {
+  margin-left: 70px;
+}
+.colorFooter .contenedoresRedes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.colorFooter .contenedoresRedes a {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+/*
+.derechosReservados {
+    margin-left: 70px;
+}
+
+.contenedoresRedes {
+    display: $display;
+    justify-content: $justify-content3;
+}
+
+.contenedoresRedes a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 70px;
+}
+*//*# sourceMappingURL=estilos.css.map */

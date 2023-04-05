@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap');
+
+
+.contenedorCardsMemes {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    gap: 20px;
+}
+
+
+a:hover {
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(11, 10, 10);
+    color: $color-primario;
+}
+
+a:visited {
+    color: rgb(101, 103, 104);
+}
+
+@media screen and (max-width:768px) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .section {
+      padding: 60px 0;
+    }
+  
+    h1, h2, h3 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 16px; 
+      line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+
+}

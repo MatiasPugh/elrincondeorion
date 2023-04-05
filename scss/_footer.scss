@@ -1,0 +1,43 @@
+.footer{
+    .footer_colorFooter {
+        background-color: $color-terciario;
+        text-align: right;
+        color: $color-primario;
+        font-size: 15px;
+        border: inset 3px grey;
+        margin-top: 5px;
+        position: $position;
+        bottom:0px;
+        z-index: 10;
+        display: $display;
+        justify-content: $justify-content3;
+        .footer_colorFooter_derechosReservados {
+            margin-left: 70px;}
+        .footer_colorFooter_.contenedoresRedes {
+            display: $display;
+            justify-content: $justify-content3;}
+        .footer_colorFooter_.contenedoresRedes a{
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            text-decoration: none;
+            margin-right: 70px;}
+    }
+}
+
+/*
+.derechosReservados {
+    margin-left: 70px;
+}
+
+.contenedoresRedes {
+    display: $display;
+    justify-content: $justify-content3;
+}
+
+.contenedoresRedes a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 70px;
+}
+*/

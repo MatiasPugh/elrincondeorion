@@ -1,0 +1,52 @@
+.body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $tipografia-general;
+    background-color: #0c0c0c;  
+    .body_colorFondoPrincipal {
+        background-color: rgba(0, 0, 0, 0.499);
+        margin-bottom: 10px;
+        padding: 10px;
+        position: $position;
+        top:0px;
+        z-index: 10;
+    }
+    .body_imagenFondo {
+        background-image: url(../assets/img/imagen\ fondo.jpg);
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        background-attachment: $background-attachment;
+    }
+    .body_imagenFondoComics {
+        background-image: url(../assets/img/imagen\ fondo\ 3.jpg);
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        background-attachment: $background-attachment;
+    }
+    .body_imagenFondoVideojuegos {
+        background-image: url(../assets/img/fondo\ juegos.jpg);
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        background-attachment: $background-attachment;
+    }
+    .body_imagenFondoSeries {
+        background-image: url(../assets/img/fondo\ series.jpg);
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        background-attachment: $background-size;
+    }
+    .body_imagenFondoNoticias {
+        background-image: url(../assets/img/fondo\ noticias.jpg);
+        background-repeat: $background-repeat;
+        background-size: $background-size;
+        background-position: $background-position;
+        background-attachment: $background-attachment;
+    }
+}
+
+
+

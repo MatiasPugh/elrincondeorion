@@ -1,0 +1,79 @@
+header {
+    background-color:rgb(46, 44, 44);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    .header_navegacionHeader {
+        .header_navegacionHeader_logoNav {
+            overflow: hidden;
+            .logoHeader {
+                float:left;
+            }    
+        }
+        .header_navegacionHeader_listaNavegacion {
+            list-style: none;
+            margin: 0%;
+            display: $display;
+            flex-wrap: $flex-wrap;
+            justify-content:$justify-content2;
+            width: 30%;
+            float: right;
+            margin-right: 100px;
+            margin-top: 5px;
+            .header_navegacionHeader_listaNavegacion_linkNav {
+                text-decoration: none;
+                color: $color-primario;
+                font-size: 17px;
+                background-color: rgb(39, 38, 38);
+                display: inline-block;
+                width: 110px;
+                position: fixed;
+                justify-content: $justify-content;
+            }
+        }    
+    }
+}
+
+
+/*
+.logoNav {
+    overflow: hidden;
+}
+
+.logoHeader {
+    float:left;
+}
+
+
+.listaNavegacion {
+    list-style: none;
+    margin: 0%;
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content:$justify-content2;
+    width: 30%;
+    float: right;
+    margin-right: 100px;
+    margin-top: 5px;
+    
+}
+
+
+.linkNav {
+    text-decoration: none;
+    color: $color-primario;
+    font-size: 17px;
+    background-color: rgb(39, 38, 38);
+    display: inline-block;
+    width: 110px;
+    position: fixed;
+    justify-content: $justify-content;
+}
+
+header {
+    background-color:rgb(46, 44, 44);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+*/
