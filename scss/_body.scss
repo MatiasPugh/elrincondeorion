@@ -13,38 +13,26 @@
     }
     .body_imagenFondo {
         background-image: url(../assets/img/imagen\ fondo.jpg);
-        background-repeat: $background-repeat;
-        background-size: $background-size;
-        background-position: $background-position;
-        background-attachment: $background-attachment;
+        background-repeat: map-get($map-background, background-repeat);
+        background-size: map-get($map-background, background-size);
+        background-position: map-get($map-background, background-position);
+        background-attachment: map-get($map-background, background-attachment);
     }
     .body_imagenFondoComics {
+        @extend .body_imagenFondo;
         background-image: url(../assets/img/imagen\ fondo\ 3.jpg);
-        background-repeat: $background-repeat;
-        background-size: $background-size;
-        background-position: $background-position;
-        background-attachment: $background-attachment;
     }
     .body_imagenFondoVideojuegos {
+        @extend .body_imagenFondo;
         background-image: url(../assets/img/fondo\ juegos.jpg);
-        background-repeat: $background-repeat;
-        background-size: $background-size;
-        background-position: $background-position;
-        background-attachment: $background-attachment;
     }
     .body_imagenFondoSeries {
+        @extend .body_imagenFondo;
         background-image: url(../assets/img/fondo\ series.jpg);
-        background-repeat: $background-repeat;
-        background-size: $background-size;
-        background-position: $background-position;
-        background-attachment: $background-size;
     }
     .body_imagenFondoNoticias {
+        @extend .body_imagenFondo;
         background-image: url(../assets/img/fondo\ noticias.jpg);
-        background-repeat: $background-repeat;
-        background-size: $background-size;
-        background-position: $background-position;
-        background-attachment: $background-attachment;
     }
 }
 

@@ -15,20 +15,20 @@ header {
             margin: 0%;
             display: $display;
             flex-wrap: $flex-wrap;
-            justify-content:$justify-content2;
+            justify-content:map-get($map-justifycontent, justify-content2);
             width: 30%;
             float: right;
             margin-right: 100px;
             margin-top: 5px;
             .header_navegacionHeader_listaNavegacion_linkNav {
                 text-decoration: none;
-                color: $color-primario;
+                color: map-get($map-colores, color-primario);
                 font-size: 17px;
                 background-color: rgb(39, 38, 38);
                 display: inline-block;
                 width: 110px;
                 position: fixed;
-                justify-content: $justify-content;
+                justify-content: map-get($map-justifycontent,justify-content);
             }
         }    
     }

@@ -1,29 +1,37 @@
 
 $tipografia-general: 'Dosis', sans-serif;
-
-$justify-flex: flex;
-$justify-between: space-between;
-
-$color-primario: aliceblue;
-$color-secundario: rgba(49, 23, 23, 0.9);
-$color-terciario: rgba(22, 4, 4, 0.518);
-$color-cuarto: rgb(118, 7, 7);
-$color-quinto: rgba(180,172,172,0.05);
-
-$justify-content: center;
-$justify-content2: space-between;
-$justify-content3: space-evenly;
-
 $flex-wrap: wrap;
 $align-items: center;
 $object-fit: cover;
 $display: flex;
 $flex-direction: column;
 $text-align: center;
-
-$background-position: center;
-$background-repeat: no-repeat;
-$background-size: cover;
-$background-attachment: fixed;
-
 $position: sticky;
+
+$map-justify: (
+    justify-flex: flex,
+    justify-between: space-between,
+);
+
+$map-colores: (
+    color-primario : aliceblue,
+    color-secundario: rgba(49, 23, 23, 0.9),
+    color-terciario: rgba(22, 4, 4, 0.518),
+    color-cuarto: rgb(118, 7, 7),
+    color-quinto: rgba(180,172,172,0.05),
+);
+
+
+
+$map-justifycontent:(    
+    justify-content: center,
+    justify-content2: space-between,
+    justify-content3: space-evenly,
+);
+
+$map-background: (
+    background-position: center,
+    background-repeat: no-repeat,
+    background-size: cover,
+    background-attachment: fixed,
+);

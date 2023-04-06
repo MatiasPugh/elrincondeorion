@@ -6,19 +6,19 @@
         filter:contrast(120%);
     }
     .main_section.seccionSegunda:hover {
-        background-color:$color-secundario;
+        background-color: map-get($map-colores, color-secundario);
     }
     .main_section.seccionTercera:hover {
-        background-color:$color-secundario;
+        @extend .main_section.seccionSegunda:hover;
     }
     .main_section.seccionComic:hover {
-        background-color:$color-secundario;
+        @extend .main_section.seccionSegunda:hover;
     }
     .main_textoCentrado {
         text-align: $text-align
     }
     .main_textoCentrado1 {
-        text-align: $text-align;
+        @extend .main_textoCentrado;
     }
     .main_section {
         width: 100%;
@@ -26,7 +26,7 @@
         height: 100%;
         object-fit: $object-fit;
         display: $display;
-        justify-content: $justify-content;
+        justify-content: map-get($map-justifycontent, justify-content);
         align-items: $align-items;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -39,12 +39,12 @@
     }
     .main_sectionPrincipalIndex {
         background-color:rgba(4, 4, 4, 0.9);
-        text-shadow: 5px 1px 1px $color-quinto;
+        text-shadow: 5px 1px 1px map-get($map-colores, color-quinto);
         margin-top: 25px;
         margin-bottom: 25px;
         .main_sectionPrincipalIndex_primertitulo {
             font-size: 25px;
-            color:$color-cuarto;
+            color:map-get($map-colores, color-cuarto);
         }
         .main_sectionPrincipalIndex_tituloPrincipal {
             font-style: bold;
@@ -53,17 +53,17 @@
         }    
         .main_sectionPrincipalIndex_primerparrafo {
             font-size: 30px;
-            color:$color-cuarto;
+            color:map-get($map-colores, color-cuarto);
         }
     }
     .main_seccionComic {
-        color:$color-primario;
+        color:map-get($map-colores, color-primario);
         font-size: 20px;
         display: f$display;
         flex-direction: $flex-direction;
         flex-wrap: $flex-wrap;
-        justify-content: $justify-content2;
-        background-color: $color-terciario;
+        justify-content: map-get($map-justifycontent, justify-content2);
+        background-color: map-get($map-colores, color-terciario);
         text-shadow: -5px -1px 1px $color-quinto;
         margin-bottom: 30px;
         align-items: $align-items;
@@ -76,7 +76,7 @@
             font-size: 30px;
             color:rgb(252, 251, 251);
             background-color: rgba(201, 151, 151, 0.441);
-            justify-content: $justify-content;
+            justify-content: $map-get($map-justifycontent, justify-content);
         }
         .main_seccionComic_primerTituloComic,
         .seccionComic p {
@@ -84,17 +84,17 @@
         }
     }
     .main_seccionSegunda {
-        color:$color-primario;
+        color:map-get($map-colores, color-primario);
         font-size: 20px;
         display: $display;
         flex-wrap: $flex-wrap;
-        justify-content:$justify-content;
-        background-color: $color-terciario;
-        text-shadow: -5px -1px 1px $color-quinto;
+        justify-content: map-get($map-justifycontent, justify-content);
+        background-color: map-get($map-colores, color-terciario);
+        text-shadow: -5px -1px 1px map-get($map-colores, color-quinto);
         margin-bottom: 30px;
         align-items: $align-items;
         .main_seccionSegunda_seccionSegundaMemes {
-            justify-content: $justify-content;
+            justify-content: map-get($map-justifycontent, justify-content);
             text-align: $text-align;
             .main_seccionSegunda_seccionSegundaMemes_meme {
                 display: $display;
@@ -105,24 +105,24 @@
         }    
     }
     .main_seccionTercera{
-        color:$color-primario;
+        color:map-get($map-colores, color-primario);
         font-size: 20px;
-        background-color:$color-terciario;
-        text-shadow: -5px -1px 1px $color-quinto;
+        background-color:map-get($map-colores, color-terciario);
+        text-shadow: -5px -1px 1px map-get($map-colores, color-quinto);
         display: $display;
         flex-wrap: $flex-wrap;
-        justify-content:$justify-content;       
+        justify-content:map-get($map-justifycontent, justify-content);       
         .main_seccionTercera_contenedorCardsMap {
         width: 100%;
         display: $display;
-        justify-content: $justify-content2;
+        justify-content: map-get($map-justifycontent, justify-content2);
         gap: 1rem;
             .main_seccionTercera_contenedorCardsMap_cardMap {
             display: $display;
             flex-direction: $flex-direction;
             width: calc(50% - 0.5rem);
             height: auto;
-            justify-content: $justify-content2;
+            justify-content: map-get($map-justifycontent, justify-content2);
             align-items: $align-items;
             }
             .main_seccionTercera_contenedorCardsMap_card img{
@@ -135,21 +135,21 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
             text-align: $text-align;
-            justify-content: $justify-content2;
+            justify-content: map-get($map-justifycontent, justify-content2);
             flex-direction: $flex-direction;
             }
         }   
     }
     .main_formularioIndex {
-        background-color: $color-terciario;
+        background-color: map-get($map-colores, color-terciario);
         font-size: 20px;
         text-align: $text-align;
-        color:$color-primario;
+        color: map-get($map-colores, color-primario);
         bottom: 5px;
         margin-bottom: 20px;
         margin-top: 20px;
         section.formularioIndex:hover {
-            background-color:$color-secundario;
+            background-color: map-get($map-colores, color-secundario);
         }
     }
     @media screen and (max-width: 768px){
