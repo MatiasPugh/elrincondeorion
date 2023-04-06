@@ -17,27 +17,6 @@
             display: $display;
             justify-content: map-get($justifycontent, justify-content3);}
         .footer_colorFooter_.contenedoresRedes a{
-            color: rgb(255, 255, 255);
-            font-size: 30px;
-            text-decoration: none;
-            margin-right: 70px;}
+            @include color-front-margin(rgb(255, 255, 255),30px, none, 70px);}
     }
 }
-
-/*
-.derechosReservados {
-    margin-left: 70px;
-}
-
-.contenedoresRedes {
-    display: $display;
-    justify-content: $justify-content3;
-}
-
-.contenedoresRedes a{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    text-decoration: none;
-    margin-right: 70px;
-}
-*/

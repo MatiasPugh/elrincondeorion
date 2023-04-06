@@ -1,0 +1,6 @@
+@mixin color-front-margin($colormixin, $font, $text-decoration, $margin){
+color: $colormixin;
+font-size: $font;
+text-decoration: $text-decoration;
+margin-right: $margin;
+}
